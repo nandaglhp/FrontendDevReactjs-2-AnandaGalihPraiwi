@@ -1,3 +1,33 @@
+# Frontend Restaurant
+
+This project is built with React and Vite, utilizing several modern web development tools and libraries.
+
+- **React**: ^18.2.0
+- **TypeScript**: ^5.2.2
+
+How to Start Project?
+
+- npm install
+- npm run dev
+
+## Hosting
+
+### Why Vercel?
+
+I chose to host this project on Vercel instead of Netlify due to issues with registration and authentication on Netlify. Vercel offers several advantages:
+
+- Easy Integration: Vercel provides seamless integration with GitHub, allowing for automatic deployments on push.
+- Fast Builds: Vercel's build process is optimized for speed, providing quick feedback during development.
+- Serverless Functions: Vercel supports serverless functions, which can be very useful for building full-stack applications.
+  Global CDN: Vercel uses a global CDN to ensure fast load times for users around the world.
+
+![verify](/frontend/assets/netlify1.jpeg)
+![authentication](/frontend/assets/netlify2.jpeg)
+
+# If you want to see the backend go checkhout
+
+- [restaurant-backend](https://github.com/nandaglhp/restaurant-backend)
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
@@ -17,12 +47,12 @@ If you are developing a production application, we recommend updating the config
 export default {
   // other rules...
   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
+    ecmaVersion: "latest",
+    sourceType: "module",
+    project: ["./tsconfig.json", "./tsconfig.node.json"],
     tsconfigRootDir: __dirname,
   },
-}
+};
 ```
 
 - Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
